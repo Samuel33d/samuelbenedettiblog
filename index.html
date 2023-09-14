@@ -1,222 +1,239 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Samuel Benedetti</title>
-        <link rel="stylesheet" href="styles.css" />
-        <script src="/js/scrollreveal.js"></script>
-        <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
-        rel="stylesheet"
-        />
-    </head>
+<!DOCTYPE html>
+<html lang="en">
 
-    <body>
-        <header id="header">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samuel Benedetti</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="/js/scrollreveal.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <header id="header">
         <nav class="navbar">
-            <a href="index.html" class="logo"
-            ><img src="/img/pngwing.com(2).png" alt=""
-            /></a>
-            <a href="#header">Inicio</a>
-            <a href="#cantantes">Cantantes</a>
-            <a href="#proyectos">Proyectos</a>
-            <a href="#contacto">Contacto</a>
+            <div class="navbar__logo">
+                <a href="index.html" class="logo"><img src="/img/pngwing.com(2).png" alt="" /></a>
+            </div>
+
+            <div class="navbar__icon">
+                <box-icon name='menu'></box-icon>
+            </div>
+
+            <div class="navbar__menu">
+                <box-icon class="closeMenu" name='x'></box-icon>
+                <ul class="navbar__menu-a">
+                    <li><a href="#header">Inicio</a></li>
+                    <li><a href="#cantantes">Cantantes</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+
         </nav>
         <div class="header__content">
+            <div class="header__img">
+                <img src="/img/kisspng-electric-guitar-prs-guitars-prs-custom-24-prs-se-c-prs-guitars-5b1576cc046c73.3455003715281333240181.png"
+                    alt="">
+            </div>
             <h1 class="header__title">
-            <span>s</span>
-            <span>a</span>
-            <span>m</span>
-            <span>u</span>
-            <span>e</span>
-            <span>l</span>
-            <span>b</span>
-            <span>e</span>
-            <span>n</span>
-            <span>e</span>
-            <span>d</span>
-            <span>e</span>
-            <span>t</span>
-            <span>t</span>
-            <span>i</span>
+                Samuel Benedetti
             </h1>
         </div>
-        </header>
+    </header>
 
 
-        <main>
-        <div id="cantantes" class="singer__title">
-            <h2>Cantantes Favoritos</h2>
-        </div>
-        <section class="section__singers">
+    <main>
+
+        <h3>Cantantes Favoritos</h3>
+
+        <section id="cantantes" class="section__singers">
+
             <div class="section__card">
-            <h3>Luis Miguel</h3>
-            <div class="card__img">
-                <a href="https://youtu.be/2K8T2Ip6W2w" target="_blank"
-                ><img
-                    src="https://i.scdn.co/image/ab67616d0000b273f2237e4348c77d9ccd1ebd3a"
-                    alt="cantante"
-                /></a>
-            </div>
-            <p>
-                Luis Miguel Gallego Basteri, nacido el 19 de abril de 1970 en Puerto
-                Rico, es un cantante icónico de México, reconocido
-                internacionalmente, con diversos premios y éxitos musicales.
-            </p>
+                <div class="card__img">
+                    <a href="https://youtu.be/2K8T2Ip6W2w" target="_blank"><img
+                            src="https://i.scdn.co/image/ab67616d0000b273f2237e4348c77d9ccd1ebd3a" alt="cantante" /></a>
+                </div>
+                <h3>Luis Miguel</h3>
+                <p>
+                    Luis Miguel Gallego Basteri, nacido el 19 de abril de 1970 en Puerto
+                    Rico, es un cantante icónico de México, reconocido
+                    internacionalmente, con diversos premios y éxitos musicales.
+                </p>
             </div>
             <div class="section__card">
-            <h3>Juan Luis Guerra</h3>
-            <div class="card__img">
-                <a href="https://youtu.be/8YDKtp-3ioo" target="_blank"
-                ><img
-                    src="https://juanluisguerra.com/wp-content/uploads/2021/09/entre-mar-y-palmera.jpg"
-                    alt="cantante"
-                /></a>
-            </div>
-            <p>
-                Juan Luis Guerra, músico y compositor dominicano, fusiona merengue y
-                bachata, ganador de múltiples Grammy, influyente en música latina.
-            </p>
+                <div class="card__img">
+                    <a href="https://youtu.be/8YDKtp-3ioo" target="_blank"><img
+                            src="https://juanluisguerra.com/wp-content/uploads/2021/09/entre-mar-y-palmera.jpg"
+                            alt="cantante" /></a>
+                </div>
+                <h3>Juan Luis Guerra</h3>
+                <p>
+                    Juan Luis Guerra, músico y compositor dominicano, fusiona merengue y
+                    bachata, ganador de múltiples Grammy, influyente en música latina.
+                </p>
             </div>
             <div class="section__card">
-            <h3>Guaco</h3>
-            <div class="card__img">
-                <a href="https://youtu.be/elrjzVLmJw8" target="_blank"
-                ><img
-                    src="https://i.discogs.com/WUZxemM1YS807sE92OFmZDUL3sKlgzLI1iJOzcon4fg/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNTI5/MzAxLTE1MzcwNDQz/OTktOTgwMC5qcGVn.jpeg"
-                    alt="orquesta"
-                /></a>
-            </div>
-            <p>
-                Guaco, banda venezolana fundada en 1960, destacada en género
-                tropical y gaita, influyente en música caribeña, con amplia
-                discografía.
-            </p>
+                <div class="card__img">
+                    <a href="https://youtu.be/elrjzVLmJw8" target="_blank"><img
+                            src="https://i.discogs.com/WUZxemM1YS807sE92OFmZDUL3sKlgzLI1iJOzcon4fg/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNTI5/MzAxLTE1MzcwNDQz/OTktOTgwMC5qcGVn.jpeg"
+                            alt="orquesta" /></a>
+                </div>
+                <h3>Guaco</h3>
+                <p>
+                    Guaco, banda venezolana fundada en 1960, destacada en género
+                    tropical y gaita, influyente en música caribeña, con amplia
+                    discografía.
+                </p>
             </div>
             <div class="section__card">
-            <h3>Bee gees</h3>
-            <div class="card__img">
-                <a href="https://youtu.be/fNFzfwLM72c" target="_blank"
-                ><img
-                    src="https://play-lh.googleusercontent.com/mWadJ0lA-ysaqN_0UZResr3YnE7-BE-03o50dbvXGJu5H9jYYVdbJqKL68shj8SzSoo=w240-h480"
-                    alt="banda"
-                /></a>
-            </div>
-            <p>
-                Bee Gees, grupo musical británico-australiano, famoso por su música
-                disco, formado por los hermanos Barry, Robin y Maurice Gibb.
-            </p>
+                <div class="card__img">
+                    <a href="https://youtu.be/fNFzfwLM72c" target="_blank"><img
+                            src="https://play-lh.googleusercontent.com/mWadJ0lA-ysaqN_0UZResr3YnE7-BE-03o50dbvXGJu5H9jYYVdbJqKL68shj8SzSoo=w240-h480"
+                            alt="banda" /></a>
+                </div>
+                <h3>Bee gees</h3>
+                <p>
+                    Bee Gees, grupo musical británico-australiano, famoso por su música
+                    disco, formado por los hermanos Barry, Robin y Maurice Gibb.
+                </p>
             </div>
             <div class="section__card">
-            <h3>grupo niche</h3>
-            <div class="card__img">
-                <a href="https://youtu.be/_BnwvqPUpik" target="_blank"
-                ><img
-                    src="https://i1.sndcdn.com/avatars-000212329692-2q3wuv-t500x500.jpg"
-                    alt="orquesta"
-                /></a>
-            </div>
-            <p>
-                Grupo Niche, banda colombiana de salsa fundada en 1978, reconocida
-                por su impacto en el género y sus emocionantes interpretaciones.
-            </p>
+                <div class="card__img">
+                    <a href="https://youtu.be/_BnwvqPUpik" target="_blank"><img
+                            src="https://i1.sndcdn.com/avatars-000212329692-2q3wuv-t500x500.jpg" alt="orquesta" /></a>
+                </div>
+                <h3>grupo niche</h3>
+                <p>
+                    Grupo Niche, banda colombiana de salsa fundada en 1978, reconocida
+                    por su impacto en el género y sus emocionantes interpretaciones.
+                </p>
             </div>
             <div class="section__card">
-            <h3>los melodicos</h3>
-            <div class="card__img">
-                <a href="https://youtu.be/_p3uYwRoVV0" target="_blank"
-                ><img
-                    src="https://cdns-images.dzcdn.net/images/artist/8b804ea8f984803f4748187a21920da5/500x500.jpg"
-                    alt="orquesta"
-                /></a>
-            </div>
-            <p>
-                Los Melódicos, orquesta venezolana fundada en 1958, destacada en
-                música tropical, merengue y salsa, influyente en la escena musical
-                latinoamericana.
-            </p>
+                <div class="card__img">
+                    <a href="https://youtu.be/_p3uYwRoVV0" target="_blank"><img
+                            src="https://cdns-images.dzcdn.net/images/artist/8b804ea8f984803f4748187a21920da5/500x500.jpg"
+                            alt="orquesta" /></a>
+                </div>
+                <h3>los melodicos</h3>
+                <p>
+                    Los Melódicos, orquesta venezolana fundada en 1958, destacada en
+                    música tropical, merengue y salsa, influyente en la escena musical
+                    latinoamericana.
+                </p>
             </div>
         </section>
 
+        <hr>
+        <h3>Proyectos</h3>
+        <section id="proyectos" class="section__proyects">
 
-        <section class="section__proyects">
-                <div id="proyectos" class="proyects__title"><h2>Proyectos</h2></div>
-            
-                <div class="proyect__card">
-                    <div class="proyect__card_text">
-                        <h3>Samuel Benedetti Freelancer</h3>
 
-                    </div>
-                    <div class="video__proyect__card">
-                        <video src="/vid/video2.mp4" controls></video>
-                    </div>
-                </div>
-                </div>
-                <div class="proyect__card">
-                    <div class="proyect__card_text">
-                        <h3>Tienda Front End</h3>
+            <div class="proyect__card container">
+                <div class="proyect__card_text">
+                    <h3>Samuel Benedetti Freelancer</h3>
 
-                    </div>
-                    <div class="video__proyect__card">
-                        <video src="/vid/video3.mp4" controls></video>
-                    </div>
                 </div>
-                </div><div class="proyect__card">
-                    <div class="proyect__card_text">
-                        <h3>Blog de Café</h3>
+                <div class="video__proyect__card">
+                    <video src="/vid/video2.mp4" controls></video>
+                </div>
+            </div>
+            </div>
+            <div class="proyect__card">
+                <div class="proyect__card_text">
+                    <h3>Tienda Front End</h3>
 
-                    </div>
-                    <div class="video__proyect__card">
-                        <video src="/vid/video4.mp4" controls></video>
-                    </div>
                 </div>
-                </div><div class="proyect__card">
-                    <div class="proyect__card_text">
-                        <h3>Ejercicio Css</h3>
+                <div class="video__proyect__card">
+                    <video src="/vid/video3.mp4" controls></video>
+                </div>
+            </div>
+            </div>
+            <div class="proyect__card">
+                <div class="proyect__card_text">
+                    <h3>Blog de Café</h3>
 
-                    </div>
-                    <div class="video__proyect__card">
-                        <img src="/img/ejerciciocss.jpeg" alt="">
-                    </div>
                 </div>
+                <div class="video__proyect__card">
+                    <video src="/vid/video4.mp4" controls></video>
                 </div>
+            </div>
+            </div>
+            <div class="proyect__card">
+                <div class="proyect__card_text">
+                    <h3>Ejercicio Css</h3>
+
+                </div>
+                <div class="video__proyect__card">
+                    <img src="/img/ejerciciocss.jpeg" alt="">
+                </div>
+            </div>
+            </div>
         </section>
-        
-        <section class="section__contact">
-            <div id="contacto" class="contact__title"><h2>contacto</h2></div>
+        <hr>
+
+        <section id="contacto" class="section__contact container">
+
+            <h3>contacto</h3>
             <div class="contact__container">
 
                 <div class="contact_icon">
-                    <a href="https://www.facebook.com/samuel.benedetti.54/" target="_blank">                    
-                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
-                            <path fill="#3F51B5" d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z"></path><path fill="#FFF" d="M34.368,25H31v13h-5V25h-3v-4h3v-2.41c0.002-3.508,1.459-5.59,5.592-5.59H35v4h-2.287C31.104,17,31,17.6,31,18.723V21h4L34.368,25z"></path>
-                            </svg>
+                    <a href="https://www.facebook.com/samuel.benedetti.54/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                            viewBox="0 0 48 48">
+                            <path fill="#3F51B5"
+                                d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z">
+                            </path>
+                            <path fill="#FFF"
+                                d="M34.368,25H31v13h-5V25h-3v-4h3v-2.41c0.002-3.508,1.459-5.59,5.592-5.59H35v4h-2.287C31.104,17,31,17.6,31,18.723V21h4L34.368,25z">
+                            </path>
+                        </svg>
                     </a>
-                        <h3>facebook</h3>
+                    <h3>facebook</h3>
                 </div>
                 <div class="contact_icon">
-                    <a href="">                    
-                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
-                            <linearGradient id="_osn9zIN2f6RhTsY8WhY4a_5MQ0gPAYYx7a_gr1" x1="10.341" x2="40.798" y1="8.312" y2="38.769" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#2aa4f4"></stop><stop offset="1" stop-color="#007ad9"></stop></linearGradient><path fill="url(#_osn9zIN2f6RhTsY8WhY4a_5MQ0gPAYYx7a_gr1)" d="M46.105,11.02c-1.551,0.687-3.219,1.145-4.979,1.362c1.789-1.062,3.166-2.756,3.812-4.758	c-1.674,0.981-3.529,1.702-5.502,2.082C37.86,8.036,35.612,7,33.122,7c-4.783,0-8.661,3.843-8.661,8.582	c0,0.671,0.079,1.324,0.226,1.958c-7.196-0.361-13.579-3.782-17.849-8.974c-0.75,1.269-1.172,2.754-1.172,4.322	c0,2.979,1.525,5.602,3.851,7.147c-1.42-0.043-2.756-0.438-3.926-1.072c0,0.026,0,0.064,0,0.101c0,4.163,2.986,7.63,6.944,8.419	c-0.723,0.198-1.488,0.308-2.276,0.308c-0.559,0-1.104-0.063-1.632-0.158c1.102,3.402,4.299,5.889,8.087,5.963	c-2.964,2.298-6.697,3.674-10.756,3.674c-0.701,0-1.387-0.04-2.065-0.122C7.73,39.577,12.283,41,17.171,41	c15.927,0,24.641-13.079,24.641-24.426c0-0.372-0.012-0.742-0.029-1.108C43.483,14.265,44.948,12.751,46.105,11.02"></path>
-                            </svg>
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                            viewBox="0 0 48 48">
+                            <linearGradient id="_osn9zIN2f6RhTsY8WhY4a_5MQ0gPAYYx7a_gr1" x1="10.341" x2="40.798"
+                                y1="8.312" y2="38.769" gradientUnits="userSpaceOnUse">
+                                <stop offset="0" stop-color="#2aa4f4"></stop>
+                                <stop offset="1" stop-color="#007ad9"></stop>
+                            </linearGradient>
+                            <path fill="url(#_osn9zIN2f6RhTsY8WhY4a_5MQ0gPAYYx7a_gr1)"
+                                d="M46.105,11.02c-1.551,0.687-3.219,1.145-4.979,1.362c1.789-1.062,3.166-2.756,3.812-4.758	c-1.674,0.981-3.529,1.702-5.502,2.082C37.86,8.036,35.612,7,33.122,7c-4.783,0-8.661,3.843-8.661,8.582	c0,0.671,0.079,1.324,0.226,1.958c-7.196-0.361-13.579-3.782-17.849-8.974c-0.75,1.269-1.172,2.754-1.172,4.322	c0,2.979,1.525,5.602,3.851,7.147c-1.42-0.043-2.756-0.438-3.926-1.072c0,0.026,0,0.064,0,0.101c0,4.163,2.986,7.63,6.944,8.419	c-0.723,0.198-1.488,0.308-2.276,0.308c-0.559,0-1.104-0.063-1.632-0.158c1.102,3.402,4.299,5.889,8.087,5.963	c-2.964,2.298-6.697,3.674-10.756,3.674c-0.701,0-1.387-0.04-2.065-0.122C7.73,39.577,12.283,41,17.171,41	c15.927,0,24.641-13.079,24.641-24.426c0-0.372-0.012-0.742-0.029-1.108C43.483,14.265,44.948,12.751,46.105,11.02">
+                            </path>
+                        </svg>
                     </a>
                     <h3>twitter</h3>
-                </div>                
+                </div>
                 <div class="contact_icon">
-                    <a href="https://www.linkedin.com/in/samuel-benedetti-b8a0a0213/" target="_blank">                    
-                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
-                            <path fill="#0288D1" d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z"></path><path fill="#FFF" d="M12 19H17V36H12zM14.485 17h-.028C12.965 17 12 15.888 12 14.499 12 13.08 12.995 12 14.514 12c1.521 0 2.458 1.08 2.486 2.499C17 15.887 16.035 17 14.485 17zM36 36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698-1.501 0-2.313 1.012-2.707 1.99C24.957 25.543 25 26.511 25 27v9h-5V19h5v2.616C25.721 20.5 26.85 19 29.738 19c3.578 0 6.261 2.25 6.261 7.274L36 36 36 36z"></path>
-                            </svg>
+                    <a href="https://www.linkedin.com/in/samuel-benedetti-b8a0a0213/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                            viewBox="0 0 48 48">
+                            <path fill="#0288D1"
+                                d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z">
+                            </path>
+                            <path fill="#FFF"
+                                d="M12 19H17V36H12zM14.485 17h-.028C12.965 17 12 15.888 12 14.499 12 13.08 12.995 12 14.514 12c1.521 0 2.458 1.08 2.486 2.499C17 15.887 16.035 17 14.485 17zM36 36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698-1.501 0-2.313 1.012-2.707 1.99C24.957 25.543 25 26.511 25 27v9h-5V19h5v2.616C25.721 20.5 26.85 19 29.738 19c3.578 0 6.261 2.25 6.261 7.274L36 36 36 36z">
+                            </path>
+                        </svg>
                     </a>
                     <h3>linkedin</h3>
                 </div>
             </div>
         </section>
-        </main>
-        <footer>
-            <p>Todos los derechos reservados. Samuel Benedetti❤️</p>
-        </footer>
-        <script src="js/index.js"></script>
-    </body>
-    </html>
+    </main>
+    <hr>
+    <footer>
+        <p>Todos los derechos reservados. Samuel Benedetti</p>
+    </footer>
+
+    <script src="js/index.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+
+</html>
