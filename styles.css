@@ -1,283 +1,357 @@
-html {
-    scroll-behavior: smooth;
-}
-
-*{
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
 
-body{
-    background-size: cover;
-    background-attachment: fixed;
-    background-image: url(https://img.freepik.com/foto-gratis/superficie-metal-rayado-estilo-grunge-oscuro_1048-12951.jpg);
+html {
+    scroll-behavior: smooth;
 }
+
+body {
+    background-color: wheat;
+}
+
 body::-webkit-scrollbar {
     width: 12px;
 }
 
 body::-webkit-scrollbar-track {
-    background: black;  
+    background: black;
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: gray; 
+    background-color: gray;
+}
+
+li {
+    list-style: none;
 }
 
 
-h1{
-    color: #fff;
-    font-size: 3rem;
-    text-align: end;
-    text-transform: uppercase;
-    padding-top: 25rem;
-    padding-right: 4rem;
-}
-
-h2{
-    color: #fff;
-    text-transform: uppercase;
-    text-align: center;
-    transition: font-size 0.5s;
-}
-
-h3{
-    color: #fff;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-img{
+img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    display: block;
 }
 
-video{
+video {
     width: 100%;
     height: 100%;
-    border: 4px solid black;
+    display: block;
 }
 
-/*!Estilos generales*/
-
-.header__content{
-    height: 530px;
-    width: 100%;
-
-    margin-bottom: 90px;
-    background-repeat: no-repeat;
-    background-image: url(/img/kisspng-electric-guitar-prs-guitars-prs-custom-24-prs-se-c-prs-guitars-5b1576cc046c73.3455003715281333240181.png);
-    background-size: contain;
-}
-
-nav{
-    color: #fff;
-    display: flex;
-    position: relative;
-    top: 0;
-    justify-content: end;
-    align-items: center;
-}
-
-nav a{
-    font-size: 1.2rem;
-    margin: 10px 20px;
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: top 0.3s;
-    position: relative;
-    top: 0;
-}
-
-.logo{
-margin-right: 600px;
-}
-
-
-nav a:hover{
-    top: 10px;
-    border-radius: 3px;
-    text-decoration: overline red;
-}
-
-
-h1 span{
-    letter-spacing: -2px;
-    position: relative;
-    bottom: 0;    
-    transition: all 0.3s;
-}
-
-h1 span:hover{
-    color:  red;
-    text-shadow: 3px 3px 5px black;
-    bottom: 10px;
-}
-
-h1 span:nth-child(6){
-    padding-right: 20px;
-}
-
-.apellido{
-    padding-left: 20px;
-}
-
-/*! Estilos del header ↑↑*/
-
-.section__singers{
-    width: 100%;
-    height: 100%;
-    padding: 10px 30px 30px 30px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 1rem;
-    justify-content: center;
-    margin-bottom: 10px;
-}
-
-.singer__title{
-    font-size: 1rem;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.singer__title h2:hover{
-    font-size: 1.7rem;
-    text-decoration: underline red;
-}
-
-.section__card{
-    border: 1px solid wheat;
-    border-radius: 10px;
-    margin: 10px auto;
-    width: 400px;
-    height: 95%;
-    background-color: #000;
-}
-
-
-.section__card:hover{
-    box-shadow: 3px 3px 15px wheat;
-    transform: scale(1.05);
-    transition: transform 0.3s;
-}
-
-.section__card:hover h3{
-    text-decoration: overline red;
-}
-
-.section__card p{
-    color: #fff;
-    text-transform: uppercase;
-    text-align: center;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-.card__img{
-    margin: 0 auto;
-    height: 260px;
-    width: 260px;
-    border: 5px solid wheat;
-}
-
-/*!Estilos section singers ↑↑ */
-
-.proyects__title{
-    padding-top: 10px;
-}
-.proyects__title:hover{
-    font-size: 1.1rem;
-    text-decoration: underline red;
-}
-.section__proyects{
-    height: 100%;
-    padding: 0px 200px 50px 200px;
-}
-.proyect__card{
-    display: flex;
-    justify-content: space-evenly;
-    height: 250px;
-    margin-top: 30px;
-    border: 1px solid wheat;
-    border-radius: 5px;
-    padding: 10px;
-    background-color: #000;
-}
-
-.proyect__card:hover{
-    box-shadow: 2px 2px  10px wheat;
-}
-
-.proyect__card_text{
-    display: flex;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-    text-align: center;
-    width: 50%;
-}
-.proyect__card_text h3{
-    margin: 0 auto;
-}
-.proyect__card_text p{
-    color: #fff;
-    font-size: 1rem;
-}
-
-.video__proyect__card img{
-    width: 99%;
-    border: 5px solid black;
-    border-radius: 5px;
-}
-
-/*!! Estilos Section Proyects ↑↑*/
-
-
-.section__contact{
-    margin: 0 auto;
-    width: 70%;
-    height: 287px;
-}
-
-.contact__container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
-    margin: 0 auto;
-    width: 350px;
-
-}
-.contact__icon{
+.container {
+    max-width: 1024px;
     display: flex;
     flex-direction: column;
+    padding: 2rem;
+
 }
 
-.contact_icon svg{
-    height: 100%;
-}
-.contact_icon svg:hover{
-    transform: scale(1.10);
-    transition: transform 0.3s;
-}
-
-/*! Estilos de section Contact ↑↑*/
-
-
-footer{
-    background-color: #000;
-    height: 40px;
-    border-top: 1px solid white;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    height: 5rem;
+    z-index: 10000;
+    background-color: transparent;
 }
 
 
-footer p{
-    margin: 0;
-    color: #fff;
+.navScroll {
+    background-color: white;
+}
+
+.navbar__logo {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    width: 7rem;
+}
+
+
+
+.navbar__menu {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
     text-align: center;
-    padding: 30px;
+    gap: 3rem;
     text-transform: uppercase;
-    font-size: medium;
-    background-color: #000;
+    position: fixed;
+    background-color: black;
+    left: 110%;
+    width: 70%;
+    min-height: 100vh;
+    transition: left 1s;
+
+}
+
+
+.show__menu {
+    transition: left 1s;
+    left: 40%;
+}
+
+.closeMenu {
+    fill: white;
+    position: absolute;
+    top: 2rem;
+    right: 5rem;
+    cursor: pointer;
+}
+
+.navbar__icon {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    padding: .3rem;
+    background-color: rgba(0, 0, 0, .8);
+    fill: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.navbar__menu-a {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.navbar__menu-a>li>a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+.navbar__menu-a>li>a:hover {
+    text-decoration: underline red;
+}
+
+.header__content {
+    padding: 5rem 1rem 0rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.header__title {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.8rem;
+    align-self: flex-end;
+    text-shadow: 1px 1px 5px black;
+    border-top: 1px solid black;
+    margin-top: 1rem;
+}
+
+main {
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__singers {
+    padding-top: 5rem;
+    text-align: center;
+    display: flex;
+    gap: 1rem;
+}
+
+main>h3 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #fff;
+    text-shadow: 1px 1px 4px black;
+}
+
+.section__card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+.card__img {
+    border-radius: 1rem;
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+.section__card>h3 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 1px 1px 4px black;
+}
+
+.section__card>p {
+    color: white;
+    text-shadow: 1px 1px 4px black;
+}
+
+.section__proyects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 1.5rem;
+}
+
+.section__proyects>h3 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 1px 1px 4px black;
+}
+
+.proyect__card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+.proyect__card_text {
+    padding: 1rem;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #fff;
+    text-shadow: 1px 1px 4px black;
+}
+
+.section__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__contact>h3 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 1px 1px 4px black;
+}
+
+.contact__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.contact_icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+footer {
+    padding: 2rem;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+@media (min-width:600px) {
+
+    .section__singers {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header__title {
+        font-size: 2.5rem;
+    }
+
+}
+
+.navbar__menu-a>li>a {
+    color: white;
+}
+
+.navScroll>.navbar__menu>.navbar__menu-a>li>a {
+    background-color: white;
+    color: #000;
+    transition: all 1s;
+}
+
+
+
+@media (min-width:800px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar__menu {
+
+        justify-content: center;
+        align-items: flex-end;
+        padding-right: 1rem;
+        font-size: 1.3rem;
+        text-align: center;
+        gap: 3rem;
+        text-transform: uppercase;
+        position: static;
+        background-color: transparent;
+        left: 110%;
+        min-height: 80px;
+        top: 0;
+        width: 100%;
+    }
+
+    .navbar__logo {
+        position: fixed;
+    }
+
+    .closeMenu {
+        display: none;
+
+    }
+
+    .navbar__icon {
+        display: none;
+    }
+
+    .navbar__menu-a {
+        flex-direction: row;
+
+    }
+
+    .header__title {
+        font-size: 3rem;
+    }
+
+    .section__singers {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 5rem;
+    }
+
+    .section__proyects {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 5rem;
+
+    }
+
 }
