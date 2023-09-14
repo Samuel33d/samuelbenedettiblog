@@ -288,8 +288,8 @@ footer {
 }
 
 .navScroll>.navbar__menu>.navbar__menu-a>li>a {
-    background-color: white;
-    color: #000;
+    color: #fff;
+    text-shadow: 1px 1px 5px black;
     transition: all 1s;
 }
 
